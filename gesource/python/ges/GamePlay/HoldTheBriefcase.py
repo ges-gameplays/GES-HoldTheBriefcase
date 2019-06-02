@@ -5,22 +5,11 @@ from GEWeapon import CGEWeapon
 
 USING_API = GEGlobal.API_VERSION_1_2_0
 
-	#	#	#	#	#	#	#	#
-	#							#
-	#  - Hold the Briefcase  -  #
-	#							#
-	#	#	#	#	#	#	#	#	#
-			#  						#
-			#  Created by Euphonic  #
-			#						#
-		#	#	#	#	#	#	#	#  #  #
-		# 								  #
-		#  Made for GoldenEye:Source 5.0  #
-		#								  #
-		#	#	#	#	#	#	#	#  #  #
+# Created by Euphonic for GoldenEye: Source 5.0
+# For more information, visit https://euphonic.dev/goldeneye-source/
 
 #	* / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / *
-HoldTheBriefcaseVersion = "^uHold the Briefcase Version ^l5.0.0"
+HoldTheBriefcaseVersion = "^uHold the Briefcase Version ^l5.1.0"
 #	* / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / *
 
 class Case( object ):
@@ -112,6 +101,9 @@ class HoldTheBriefcase( GEScenario ):
 							view_model="models/weapons/tokens/v_briefcasetoken.mdl",
 							world_model="models/weapons/tokens/w_briefcasetoken.mdl",
 							print_name= self.caseName )
+
+	def OnUnloadGamePlay( self ):
+		self.hideHold( None )
 
 	def OnRoundBegin(self):
 		self.caseDict = {}
