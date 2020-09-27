@@ -4,7 +4,7 @@ A repository for the GoldenEye: Source gameplay "Hold the Briefcase" and its sup
 
 ---
 
-Installation Instructions
+**Installation Instructions**
 
 • Navigate to Program Files\Steam\SteamApps\SourceMods\gesource
 
