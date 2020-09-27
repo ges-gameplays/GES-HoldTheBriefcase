@@ -9,7 +9,7 @@ USING_API = GEGlobal.API_VERSION_1_2_0
 # For more information, visit https://euphonic.dev/goldeneye-source/
 
 #	* / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / *
-HoldTheBriefcaseVersion = "^uHold the Briefcase Version ^l5.1.0"
+HoldTheBriefcaseVersion = "^uHold the Briefcase Version ^l5.1.1"
 #	* / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / * / *
 
 class Case( object ):
@@ -65,8 +65,8 @@ class HoldTheBriefcase( GEScenario ):
 		return "Hold the Briefcase"
 
 	def GetScenarioHelp( self, help_obj ):
-		help_obj.SetDescription( "Grab a briefcase and hold it for as long as you can.\n\nAlternative Scoring: Get a point for each kill while holing the briefcase.\n\nAlternative Scoring: Get an extra point for each kill while holding the briefcase\n\nTeamplay: Toggleable\n\nCreated by WNxEuphonic" )
-		help_obj.SetInfo("Hold the briefcase for as long as you can", "" )
+		help_obj.SetDescription( "Grab a briefcase and hold it for as long as you can.\n\nAlternative Scoring: Get a point for each kill while holding the briefcase.\n\nAlternative scoring: Get an extra point for each kill while holding the briefcase\n\nTeamplay: Toggleable\n\nCreated by Euphonic" )
+		help_obj.SetInfo("Grab and Hold Briefcases", "https://euphonic.dev/goldeneye-source/hold-the-briefcase/" )
 
 	def GetGameDescription( self ):
 		if GEMPGameRules.IsTeamplay():
@@ -255,7 +255,7 @@ class HoldTheBriefcase( GEScenario ):
 	
 	def OnPlayerSay(self, player, text):
 		if text == "!version":
-			GEUtil.ClientPrint(player, GEGlobal.HUD_PRINTTALK, HoldTheBriefcaseVersion)
+			GEUtil.ClientPrint(None, GEGlobal.HUD_PRINTTALK, HoldTheBriefcaseVersion)
 	
 
 	# # # # # # CUSTOM FUNCTIONS # # # # # #
