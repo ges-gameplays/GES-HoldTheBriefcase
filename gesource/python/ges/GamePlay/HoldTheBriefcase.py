@@ -78,7 +78,7 @@ class HoldTheBriefcase( GEScenario ):
 		return GEGlobal.TEAMPLAY_TOGGLE
 
 	def OnLoadGamePlay( self ):
-		self.CreateCVar( "hb_warmup", "20", "The warm up time in seconds (Use 0 to disable warmup)" )
+		self.CreateCVar( "hb_warmup", "20", "The warmup time in seconds (Use 0 to disable warmup)" )
 		self.CreateCVar( "hb_scoring", "0", "Set to 0 to use briefcase hold duration, 1 to use kills while holding briefcase" )
 		self.CreateCVar( "hb_normal_points", "1", "Gives a point or some time for kills while not holding the briefcase" )
 		self.CreateCVar( "hb_cases_override", "0", "Sets number of cases to spawn. Set to 0 to use default amount. Max 10" )
