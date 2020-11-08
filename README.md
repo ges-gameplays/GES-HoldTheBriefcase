@@ -12,7 +12,7 @@ A repository for the GoldenEye: Source gameplay "Hold the Briefcase" and its sup
 
 • When prompted, agree to merge folders
 
-• The gameplays are now installed
+• The game mode is now installed
 
 • Launch a gameplay by typing "ge_gameplay holdthebriefcase" into the server console
 
